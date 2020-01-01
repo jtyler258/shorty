@@ -1,0 +1,12 @@
+logs
+*.log
+dist
+node_modules
+.DS_Store
+*.env
+.env
+.tmp
+*.swp
+*creds.json
+*sa.json
+creds
