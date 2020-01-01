@@ -1,6 +1,7 @@
 import http from 'http';
 import express from 'express';
 import { applyMiddleware, applyRoutes } from './utils';
+import { PORT } from './utils/config';
 import middleware from './middleware';
 import routes from './resources';
 
@@ -10,5 +11,5 @@ applyRoutes(routes, router);
 
 const server = http.createServer(router);
 
-const { PORT = 3000 } = process.env;
-server.listen(PORT);
+const port = Number.parseInt(PORT);
+server.listen(port);
