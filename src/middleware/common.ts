@@ -4,7 +4,7 @@ import parser from 'body-parser';
 import compression from 'compression';
 
 export const handleCors = (router: Router) => {
-  router.use(cors({ credentials: true, origin: true }));
+  router.use(cors());
 }
 
 export const handleBodyParsing = (router: Router) => {
